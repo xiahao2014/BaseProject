@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_primary_color">
+
+    <include layout="@layout/toolbar" />
+
+
+    <com.summerhao.bs.activity.view_common.refreshlistview.PullToRefreshListView
+        android:id="@+id/listView_indent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fadingEdge="none"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/primary_color"
+        android:dividerHeight="1.5dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:focusable="true"
+        android:scrollbars="none">
+
+    </com.summerhao.bs.activity.view_common.refreshlistview.PullToRefreshListView>
+
+</RelativeLayout>
