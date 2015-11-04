@@ -67,6 +67,7 @@
     <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
     <string name="button_ok">确定</string>
     <string name="CaptureActivity">二维码扫描</string>
+    <string name="UsePictureActivity">图片处理相关</string>
     <!-- zxing(end) -->
 
 </resources>

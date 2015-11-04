@@ -348,9 +348,9 @@ public class ImageIndicatorView extends RelativeLayout{
         for (int index = 0; index < totelCount; index++) {
             final ImageView imageView = (ImageView) this.indicateLayout.getChildAt(index);
             if (this.currentIndex == index) {
-                imageView.setBackgroundResource(R.drawable.view_imageindicator_image_indicator_focus);
+                imageView.setBackgroundResource(R.mipmap.view_imageindicator_image_indicator_focus);
             } else {
-                imageView.setBackgroundResource(R.drawable.view_imageindicator_image_indicator);
+                imageView.setBackgroundResource(R.mipmap.view_imageindicator_image_indicator);
             }
         }
 

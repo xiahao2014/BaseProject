@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.summerhao.bs.R;
 
+import butterknife.ButterKnife;
+
 
 /**
  * @author xiahao
@@ -32,12 +34,14 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
+        ButterKnife.inject(this);
         initGetData();
         initToolBar();
         findViews();
         init();
         widgetListener();
         registerReceiver();
+
     }
 
 

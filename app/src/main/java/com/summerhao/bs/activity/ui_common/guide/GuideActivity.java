@@ -52,7 +52,7 @@ public class GuideActivity extends BaseActivity {
 
     @Override
     protected void init() {
-        final Integer[] resArray = new Integer[] { R.drawable.guide1, R.drawable.guide2, R.drawable.guide3 };
+        final Integer[] resArray = new Integer[] { R.mipmap.guide1, R.mipmap.guide2, R.mipmap.guide3 };
         imageIndicatorView.setupLayoutByDrawable(resArray);
         imageIndicatorView.setIndicateStyle(ImageIndicatorView.INDICATE_USERGUIDE_STYLE);
         imageIndicatorView.show();

@@ -205,7 +205,7 @@ public final class ViewfinderView extends View {
 		lineRect.top = slideTop;
 		lineRect.bottom = (slideTop + MIDDLE_LINE_WIDTH);
 		canvas.drawBitmap(((BitmapDrawable) getResources()
-                        .getDrawable(R.drawable.zxing_scan_laser)).getBitmap(), null,
+                        .getDrawable(R.mipmap.zxing_scan_laser)).getBitmap(), null,
 				lineRect, paint);
 
 	}
@@ -250,13 +250,13 @@ public final class ViewfinderView extends View {
 		 * 这些资源可以用缓存进行管理，不需要每次刷新都新建
 		 */
 		Bitmap bitmapCornerTopleft = BitmapFactory.decodeResource(resources,
-				R.drawable.zxing_scan_corner_top_left);
+				R.mipmap.zxing_scan_corner_top_left);
 		Bitmap bitmapCornerTopright = BitmapFactory.decodeResource(resources,
-				R.drawable.zxing_scan_corner_top_right);
+				R.mipmap.zxing_scan_corner_top_right);
 		Bitmap bitmapCornerBottomLeft = BitmapFactory.decodeResource(resources,
-				R.drawable.zxing_scan_corner_bottom_left);
+				R.mipmap.zxing_scan_corner_bottom_left);
 		Bitmap bitmapCornerBottomRight = BitmapFactory.decodeResource(
-				resources, R.drawable.zxing_scan_corner_bottom_right);
+				resources, R.mipmap.zxing_scan_corner_bottom_right);
 
 		canvas.drawBitmap(bitmapCornerTopleft, frame.left + CORNER_PADDING,
 				frame.top + CORNER_PADDING, paint);

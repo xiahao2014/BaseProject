@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_launcher">
+        android:src="@mipmap/ic_launcher">
 
     </com.summerhao.bs.activity.ui_common.guide.ImageIndicatorView>
 </RelativeLayout>

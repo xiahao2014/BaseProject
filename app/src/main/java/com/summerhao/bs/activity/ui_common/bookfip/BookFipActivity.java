@@ -73,7 +73,7 @@ public class BookFipActivity extends Activity {
         pagefactory = new BookPageFactory(Constant.width, Constant.height);
 
         pagefactory.setBgBitmap(BitmapFactory.decodeResource(
-                this.getResources(), R.drawable.bg2));
+                this.getResources(), R.mipmap.bg2));
 
         try {
             pagefactory.openbook("/mnt/sdcard/test.txt");

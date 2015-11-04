@@ -32,7 +32,7 @@ public class ViewHolder {
     private static final DisplayImageOptions options;
 
     static {
-        options = new DisplayImageOptions.Builder().showImageOnLoading(R.drawable.ic_launcher).showImageForEmptyUri(R.drawable.ic_launcher).showImageOnFail(R.drawable.ic_launcher)
+        options = new DisplayImageOptions.Builder().showImageOnLoading(R.mipmap.ic_launcher).showImageForEmptyUri(R.mipmap.ic_launcher).showImageOnFail(R.mipmap.ic_launcher)
                 .cacheInMemory(true).cacheOnDisc(true)
                         // .considerExifParams(true)
                         // .displayer(new RoundedBitmapDisplayer(20))

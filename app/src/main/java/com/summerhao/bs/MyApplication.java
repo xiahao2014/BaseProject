@@ -24,18 +24,23 @@ import java.io.File;
  */
 public class MyApplication extends Application{
 
-    private static MyApplication myApplication;
-
-    public static MyApplication getInstance() {
-        return myApplication;
-    }
+    /**对外提供整个应用生命周期的Context**/
+    private static Context instance;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        myApplication = this;
         initImageLoader(this);
+        instance = this;
         //MultiDex.install(this);
+    }
+
+    /**
+     * 对外提供Application Context
+     * @return
+     */
+    public static Context gainContext() {
+        return instance;
     }
 
     /**
