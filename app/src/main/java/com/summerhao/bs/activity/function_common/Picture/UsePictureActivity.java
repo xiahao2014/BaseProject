@@ -12,6 +12,7 @@ import com.google.zxing.WriterException;
 import com.summerhao.bs.R;
 import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.utils.ToastUtil;
 import com.summerhao.bs.utils.ToolPicture;
 
@@ -24,7 +25,7 @@ import butterknife.InjectView;
  * @date 2015/11/4
  * @Copyright: Copyright (c) 2015 Shenzhen Tentinet Technology Co., Ltd. Inc. All rights reserved.
  */
-public class UsePictureActivity extends BaseActivity implements View.OnClickListener {
+public class UsePictureActivity extends BaseSwipeBackActivity implements View.OnClickListener {
 
 
     @InjectView(R.id.btn_cut)

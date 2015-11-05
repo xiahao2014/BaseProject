@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.summerhao.bs.R;
 import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.adapter.BaseAdapter;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ import java.util.Map;
  * 修改时间：2015/10/24 16:11
  * 修改备注：
  */
-public class FunctionActivity extends BaseActivity {
+public class FunctionActivity extends BaseSwipeBackActivity {
 
 
     private ListView mListView;

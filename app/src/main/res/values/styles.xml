@@ -3,18 +3,36 @@
     <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary_dark</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
         <item name="colorAccent">@color/material_deep_orange_700</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/next_product_count_bg</item>
-
         <item name="android:listDivider">@drawable/divider_bg</item>
-
 
     </style>
 
+
+    <style name="TranslateThemeFull" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/transparent</item>
+    </style>
+
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@style/BaseAppTheme">
+
+    </style>
+
+    <style name="MyAppTheme" parent="BaseAppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@mipmap/shadow_left</item>
+        <item name="shadow_right">@mipmap/shadow_right</item>
+        <item name="shadow_bottom">@mipmap/shadow_bottom</item>
     </style>
 
 

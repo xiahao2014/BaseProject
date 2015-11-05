@@ -12,7 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.summerhao.bs.R;
-import com.summerhao.bs.activity.BaseActivity;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
 import com.summerhao.bs.adapter.BaseAdapter;
 
@@ -29,7 +29,7 @@ import java.util.Map;
  * @date 2015/10/23
  * @Copyright: Copyright (c) 2015 Shenzhen Tentinet Technology Co., Ltd. Inc. All rights reserved.
  */
-public class UIActivity extends BaseActivity {
+public class UIActivity extends BaseSwipeBackActivity {
 
 
     private ListView mListView;

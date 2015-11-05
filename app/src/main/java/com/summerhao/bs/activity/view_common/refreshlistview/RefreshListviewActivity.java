@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.summerhao.bs.R;
 import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.utils.CommonUtil;
 
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ import java.util.List;
  * 修改时间：2015/10/24 14:25
  * 修改备注：
  */
-public class RefreshListviewActivity extends BaseActivity {
+public class RefreshListviewActivity extends BaseSwipeBackActivity {
 
     private List<String> mListItems;
 

@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import com.squareup.okhttp.Request;
 import com.summerhao.bs.R;
-import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.adapter.CommonAdapter;
 import com.summerhao.bs.adapter.ViewHolder;
 import com.summerhao.bs.utils.OkHttpClientManager;
@@ -28,7 +28,7 @@ import java.util.List;
  * 修改时间：2015/10/25 15:59
  * 修改备注：
  */
-public class OkhttpUseActivity extends BaseActivity {
+public class OkhttpUseActivity extends BaseSwipeBackActivity {
 
     private ListView mListView;
 

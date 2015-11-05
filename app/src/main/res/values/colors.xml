@@ -12,6 +12,7 @@
     <color name="black">#000000</color>
     <color name="tv_primary_color">#FF555555</color>
     <color name="half_transparent">#55000000</color>
+    <drawable name="transparent">#00000000</drawable>
 
     <color name="list_item_pressed_color">#DDDDDD</color>
 

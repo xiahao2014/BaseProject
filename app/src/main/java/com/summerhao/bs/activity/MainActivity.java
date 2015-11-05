@@ -1,10 +1,14 @@
 package com.summerhao.bs.activity;
 
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -19,7 +23,9 @@ import com.summerhao.bs.adapter.RecycleAdapter;
 import com.summerhao.bs.adapter.RecyclerItemClickListener;
 import com.summerhao.bs.utils.IntentUtil;
 import com.summerhao.bs.utils.KJActivityStack;
+import com.summerhao.bs.utils.SystemBarTintManager;
 import com.summerhao.bs.utils.ToastUtil;
+import com.summerhao.bs.utils.UIElementsHelper;
 
 
 /**
@@ -39,12 +45,15 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initToolBar() {
-        StatusBarCompat.compat(this);
+
+        applyKitKatTranslucency();
         ImageButton iv_left = (ImageButton) findViewById(R.id.iv_left);
         iv_left.setBackground(getResources().getDrawable(R.drawable.back_selector));
         iv_left.setVisibility(View.INVISIBLE);
         TextView tv_title = (TextView) findViewById(R.id.tv_title);
         tv_title.setText("主页");
+        StatusBarCompat.compat(this);
+
 
     }
 
@@ -59,10 +68,44 @@ public class MainActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         // 设置布局管理器
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new RecycleAdapter(new String[]{"MVC封装", "UI类封装", "控件类封装", "功能类封装", "网络请求及优化类的封装", "常用三方框架封装"}));
+        recyclerView.setAdapter(new RecycleAdapter(new String[]{"UI类封装", "控件类封装", "功能类封装", "网络请求及优化类的封装", "常用三方框架封装"}));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL_LIST));
     }
+
+    /**
+     * Apply KitKat specific translucency.
+     */
+    private void applyKitKatTranslucency() {
+
+        // KitKat translucent navigation/status bar.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            setTranslucentStatus(true);
+            SystemBarTintManager mTintManager = new SystemBarTintManager(this);
+            mTintManager.setStatusBarTintEnabled(true);
+            mTintManager.setNavigationBarTintEnabled(true);
+            mTintManager.setTintDrawable(UIElementsHelper
+                    .getGeneralActionBarBackground(this));
+//            getActionBar().setBackgroundDrawable(
+//                    UIElementsHelper.getGeneralActionBarBackground(this));
+
+        }
+
+    }
+
+    @TargetApi(19)
+    private void setTranslucentStatus(boolean on) {
+        Window win = getWindow();
+        WindowManager.LayoutParams winParams = win.getAttributes();
+        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+        if (on) {
+            winParams.flags |= bits;
+        } else {
+            winParams.flags &= ~bits;
+        }
+        win.setAttributes(winParams);
+    }
+
 
     @Override
     protected void widgetListener() {
@@ -76,20 +119,19 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemClick(View view, int position) {
                 switch (position) {
+
                     case 0:
-                        break;
-                    case 1:
                         IntentUtil.gotoActivity(MainActivity.this, UIActivity.class);
                         break;
-                    case 2:
+                    case 1:
                         IntentUtil.gotoActivity(MainActivity.this, ViewActivity.class);
                         break;
-                    case 3:
+                    case 2:
                         IntentUtil.gotoActivity(MainActivity.this, FunctionActivity.class);
                         break;
-                    case 4:
+                    case 3:
                         break;
-                    case 5:
+                    case 4:
                         IntentUtil.gotoActivity(MainActivity.this, FrameActivity.class);
                         break;
 

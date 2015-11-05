@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.summerhao.bs" >
+    package="com.summerhao.bs">
 
     <!-- 写入扩展存储，向扩展卡写入数据-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -75,8 +75,14 @@
         android:theme="@style/AppTheme">
 
         <!--************************程序主界面*****************************-->
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/MyAppTheme">
 
+        </activity>
+
+        <activity
+            android:name=".SplishActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -87,8 +93,7 @@
 
 
         <!--************************UI封装*****************************-->
-        <activity android:name=".activity.ui_common.UIActivity">
-        </activity>
+        <activity android:name=".activity.ui_common.UIActivity"></activity>
 
         <!--策划菜单栏-->
         <activity
@@ -100,7 +105,8 @@
             </intent-filter>
         </activity>
         <!--引导界面实现-->
-        <activity android:name=".activity.ui_common.guide.GuideActivity"
+        <activity
+            android:name=".activity.ui_common.guide.GuideActivity"
             android:label="@string/GuideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -108,7 +114,8 @@
             </intent-filter>
         </activity>
         <!--小说翻页效果-->
-        <activity android:name=".activity.ui_common.bookfip.BookFipActivity"
+        <activity
+            android:name=".activity.ui_common.bookfip.BookFipActivity"
             android:label="@string/BookFipActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -117,13 +124,14 @@
 
         </activity>
 
+
         <!--&lt;!&ndash;登录效果&ndash;&gt;-->
         <!--<activity android:name=".activity.ui_common.login.LoginActivity"-->
-            <!--android:label="@string/LoginActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="com.summerhao.android.UI_COMMON" />-->
-            <!--</intent-filter>-->
+        <!--android:label="@string/LoginActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+        <!--<category android:name="com.summerhao.android.UI_COMMON" />-->
+        <!--</intent-filter>-->
         <!--</activity>-->
         <!--&lt;!&ndash;注册&ndash;&gt;-->
         <!--<activity android:name=".activity.ui_common.login.RegisterActivity">-->
@@ -134,10 +142,10 @@
 
 
         <!--************************自定义控件封装*****************************-->
-        <activity android:name=".activity.view_common.ViewActivity">
-        </activity>
+        <activity android:name=".activity.view_common.ViewActivity"></activity>
         <!--List下拉刷新-->
-        <activity android:name=".activity.view_common.refreshlistview.RefreshListviewActivity"
+        <activity
+            android:name=".activity.view_common.refreshlistview.RefreshListviewActivity"
             android:label="@string/RefreshListview">
 
             <intent-filter>
@@ -148,10 +156,10 @@
 
 
         <!--************************功能性封装*****************************-->
-        <activity android:name=".activity.function_common.FunctionActivity">
-        </activity>
+        <activity android:name=".activity.function_common.FunctionActivity"></activity>
         <!--拍照、选择照片-->
-        <activity android:name=".activity.function_common.camera.CameraPictureActivity"
+        <activity
+            android:name=".activity.function_common.camera.CameraPictureActivity"
             android:label="@string/CameraPictureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -159,14 +167,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.function_common.zxing.CaptureActivity"
+        <activity
+            android:name=".activity.function_common.zxing.CaptureActivity"
             android:label="@string/CaptureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.summerhao.android.FUNCTION_COMMON" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.function_common.Picture.UsePictureActivity"
+        <activity
+            android:name=".activity.function_common.Picture.UsePictureActivity"
             android:label="@string/UsePictureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -180,7 +190,8 @@
 
         </activity>
         <!--Okhttp使用-->
-        <activity android:name=".activity.frame_common.okhttp.OkhttpUseActivity"
+        <activity
+            android:name=".activity.frame_common.okhttp.OkhttpUseActivity"
             android:label="@string/OkhttpUseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -188,7 +199,8 @@
             </intent-filter>
         </activity>
         <!--OrmLite使用-->
-        <activity android:name=".activity.frame_common.ormlite.OrmLiteActivity"
+        <activity
+            android:name=".activity.frame_common.ormlite.OrmLiteActivity"
             android:label="@string/OrmLiteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -206,7 +218,6 @@
         android:normalScreens="true"
         android:resizeable="true"
         android:smallScreens="true" />
-
 
 
 </manifest>

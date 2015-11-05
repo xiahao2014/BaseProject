@@ -7,8 +7,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.summerhao.bs.R;
-import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ import java.util.List;
  * @date 2015/10/27
  * @Copyright: Copyright (c) 2015 Shenzhen Tentinet Technology Co., Ltd. Inc. All rights reserved.
  */
-public class OrmLiteActivity extends BaseActivity implements View.OnClickListener {
+public class OrmLiteActivity extends BaseSwipeBackActivity implements View.OnClickListener {
 
 
     private Button add, query, delete, update;

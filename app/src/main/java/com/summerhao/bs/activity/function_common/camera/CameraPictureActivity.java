@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.summerhao.bs.R;
 import com.summerhao.bs.activity.BaseActivity;
 import com.summerhao.bs.activity.ui_common.drawerlayout.StatusBarCompat;
+import com.summerhao.bs.activity.view_common.swipeback.BaseSwipeBackActivity;
 import com.summerhao.bs.utils.CommonUtil;
 import com.summerhao.bs.utils.GetPathFromUri4kitkat;
 import com.summerhao.bs.utils.ToastUtil;
@@ -31,7 +32,7 @@ import java.io.File;
  * 修改时间：2015/10/24 16:25
  * 修改备注：
  */
-public class CameraPictureActivity extends BaseActivity implements OnClickListener {
+public class CameraPictureActivity extends BaseSwipeBackActivity implements OnClickListener {
 
     /**
      * 返回后的图片显示
