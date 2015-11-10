@@ -105,6 +105,7 @@
     <orderEntry type="library" exported="" name="ormlite-android-4.48" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="butterknife-6.1.0" level="project" />
+    <orderEntry type="library" exported="" name="androideventbus-1.0.5" level="project" />
     <orderEntry type="library" exported="" name="MapApiServices" level="project" />
     <orderEntry type="library" exported="" name="BaiduLBS_Android" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.0.1" level="project" />

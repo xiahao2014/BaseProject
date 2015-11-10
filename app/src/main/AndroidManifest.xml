@@ -106,7 +106,7 @@
 
 
         <!--************************UI封装*****************************-->
-        <activity android:name=".all_list.ui_common.UIActivity"></activity>
+        <activity android:name=".all_list.ui_common.UIActivity"/>
 
         <!--策划菜单栏-->
         <activity
@@ -155,7 +155,7 @@
 
 
         <!--************************自定义控件封装*****************************-->
-        <activity android:name=".all_list.view_common.ViewActivity"></activity>
+        <activity android:name=".all_list.view_common.ViewActivity"/>
         <!--List下拉刷新-->
         <activity
             android:name=".all_list.view_common.refreshlistview.RefreshListviewActivity"
@@ -169,7 +169,7 @@
 
 
         <!--************************功能性封装*****************************-->
-        <activity android:name=".all_list.function_common.FunctionActivity"></activity>
+        <activity android:name=".all_list.function_common.FunctionActivity"/>
         <!--拍照、选择照片-->
         <activity
             android:name=".all_list.function_common.camera.CameraPictureActivity"
@@ -220,6 +220,14 @@
                 <category android:name="com.summerhao.android.FRAME_COMMON" />
             </intent-filter>
         </activity>
+        <activity android:name=".all_list.frame_common.androideventBus.EvenBusActivity"
+            android:label="@string/EvenBusActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.summerhao.android.FRAME_COMMON" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".all_list.frame_common.androideventBus.SencodeActivity"/>
 
 
     </application>

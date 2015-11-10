@@ -71,5 +71,6 @@
     <!-- zxing(end) -->
 
     <string name="loading_waiting">加載中，请稍后...</string>
+    <string name="EvenBusActivity">AndroidEvenBus</string>
 
 </resources>
