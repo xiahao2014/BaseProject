@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:layout_gravity="center" />
 
-    <com.summerhao.bs.activity.function_common.zxing.view.ViewfinderView
+    <com.summerhao.bs.all_list.function_common.zxing.view.ViewfinderView
         android:id="@+id/capture_viewfinder_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

@@ -70,4 +70,6 @@
     <string name="UsePictureActivity">图片处理相关</string>
     <!-- zxing(end) -->
 
+    <string name="loading_waiting">加載中，请稍后...</string>
+
 </resources>

@@ -7,7 +7,7 @@
     <include layout="@layout/toolbar" />
 
 
-    <com.summerhao.bs.activity.view_common.refreshlistview.PullToRefreshListView
+    <com.summerhao.bs.all_list.view_common.refreshlistview.PullToRefreshListView
         android:id="@+id/listView_indent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,6 +23,6 @@
         android:focusable="true"
         android:scrollbars="none">
 
-    </com.summerhao.bs.activity.view_common.refreshlistview.PullToRefreshListView>
+    </com.summerhao.bs.all_list.view_common.refreshlistview.PullToRefreshListView>
 
 </RelativeLayout>

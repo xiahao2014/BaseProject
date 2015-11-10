@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
-    <com.summerhao.bs.activity.function_common.zxing.view.ViewfinderView
+    <com.summerhao.bs.all_list.function_common.zxing.view.ViewfinderView
         android:id="@+id/viewfinder_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

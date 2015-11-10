@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar"/>
-    <com.summerhao.bs.activity.ui_common.guide.ImageIndicatorView
+    <com.summerhao.bs.all_list.ui_common.guide.ImageIndicatorView
 
         android:id="@+id/guide_indicate_view"
         android:layout_below="@+id/toolbar"
@@ -14,5 +14,5 @@
         android:contentDescription="@string/app_name"
         android:src="@mipmap/ic_launcher">
 
-    </com.summerhao.bs.activity.ui_common.guide.ImageIndicatorView>
+    </com.summerhao.bs.all_list.ui_common.guide.ImageIndicatorView>
 </RelativeLayout>

@@ -5,8 +5,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.summerhao.bs.activity.BaseActivity;
-import com.summerhao.bs.activity.MainActivity;
+import com.summerhao.bs.all_list.BaseActivity;
+import com.summerhao.bs.all_list.MainActivity;
 
 import java.util.Random;
 

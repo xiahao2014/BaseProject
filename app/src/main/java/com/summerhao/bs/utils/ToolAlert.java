@@ -23,8 +23,8 @@ import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import com.summerhao.bs.MyApplication;
-import com.summerhao.bs.activity.view_common.progressdialog.NotificationMessage;
-import com.summerhao.bs.activity.view_common.progressdialog.ProgressDialog;
+import com.summerhao.bs.all_list.view_common.progressdialog.NotificationMessage;
+import com.summerhao.bs.all_list.view_common.progressdialog.ProgressDialog;
 
 
 /**
