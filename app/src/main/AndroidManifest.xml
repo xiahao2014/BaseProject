@@ -166,6 +166,13 @@
                 <category android:name="com.summerhao.android.VIEW_COMMON" />
             </intent-filter>
         </activity>
+        <activity android:name=".all_list.view_common.flowlayout.FlowLayoutActivity"
+            android:label="@string/FlowLayoutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.summerhao.android.VIEW_COMMON" />
+            </intent-filter>
+        </activity>
 
 
         <!--************************功能性封装*****************************-->

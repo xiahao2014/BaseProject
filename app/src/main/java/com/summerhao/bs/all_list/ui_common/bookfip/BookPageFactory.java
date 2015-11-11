@@ -33,7 +33,7 @@ public class BookPageFactory {
 
 	private Vector<String> m_lines = new Vector<String>();
 
-	private int m_fontSize = 24;
+	private int m_fontSize = 35;
 	private int m_textColor = Color.BLACK;
 	private int m_backColor = 0xffff9e85; // 背景颜色
 	private int marginWidth = 15; // 左右与边缘的距离
