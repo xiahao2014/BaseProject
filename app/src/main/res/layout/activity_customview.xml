@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!--只在源图像和目标图像相交的地方绘制目标图像-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.porter_duff.DisInView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <!--只在源图像和目标图像不相交的地方绘制目标图像-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.porter_duff.DisOutView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <!--图像焦媃幻化，有一种色调均和的感觉-->
+   <!-- <com.summerhao.bs.all_list.view_common.customview.porter_duff.ScreenView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <!--测试不同PorterDuff模式的View-->
+   <!-- <com.summerhao.bs.all_list.view_common.customview.porter_duff.PorterDuffView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--橡皮擦的效果-->
+    <com.summerhao.bs.all_list.view_common.customview.porter_duff.EraserView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

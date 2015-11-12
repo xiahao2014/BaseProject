@@ -68,7 +68,7 @@ public class MainActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         // 设置布局管理器
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new RecycleAdapter(new String[]{"UI类封装", "自定义控件类", "功能类封装", "网络请求及优化类的封装", "常用三方框架封装"}));
+        recyclerView.setAdapter(new RecycleAdapter(new String[]{"UI类封装", "自定义控件相关", "功能类封装", "网络请求及优化类的封装", "常用三方框架封装"}));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL_LIST));
 

@@ -173,6 +173,20 @@
                 <category android:name="com.summerhao.android.VIEW_COMMON" />
             </intent-filter>
         </activity>
+        <activity android:name=".all_list.view_common.customview.porter_duff.CustomViewActivity"
+            android:label="@string/CustomViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.summerhao.android.VIEW_COMMON" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".all_list.view_common.customview.path_mode.PathViewActivity"
+            android:label="自定义View/path相关">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.summerhao.android.VIEW_COMMON" />
+            </intent-filter>
+        </activity>
 
 
         <!--************************功能性封装*****************************-->
