@@ -30,7 +30,7 @@
         android:layout_height="wrap_content" />-->
 
     <!--橡皮擦的效果-->
-    <com.summerhao.bs.all_list.view_common.customview.porter_duff.EraserView
+    <com.summerhao.bs.all_list.view_common.customview.color_filter.EraserView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

@@ -73,6 +73,8 @@
     <string name="loading_waiting">加載中，请稍后...</string>
     <string name="EvenBusActivity">AndroidEvenBus</string>
     <string name="FlowLayoutActivity">流式标签</string>
-    <string name="CustomViewActivity">自定义View/混合模式</string>
+    <string name="CustomViewActivity">自定义View/colorFilter</string>
+    <string name="PathViewActivity">自定义View/paint</string>
+    <string name="ShaderMatrixViewActivity">自定义View/(Shader/Matrix)</string>
 
 </resources>
