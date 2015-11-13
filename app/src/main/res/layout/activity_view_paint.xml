@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <!--文字位置-->
+    <!-- <com.summerhao.bs.all_list.view_common.customview.path_mode.FontView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />-->
+
+    <!--文字换行-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.path_mode.StaticLayoutView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--图片阴影-->
+   <!-- <com.summerhao.bs.all_list.view_common.customview.paint_other.BlurMaskFilterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--浮雕效果-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.paint_other.EmbossMaskFilterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--各种线条-->
+   <!-- <com.summerhao.bs.all_list.view_common.customview.paint_other.PathEffectView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!--心电图-->
+    <com.summerhao.bs.all_list.view_common.customview.paint_other.ECGView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--图片阴影-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.paint_other.ShadowView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

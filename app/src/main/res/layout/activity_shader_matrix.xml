@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <!--<com.summerhao.bs.all_list.view_common.customview.shader_matrix.ShaderView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+    <!-- <com.summerhao.bs.all_list.view_common.customview.shader_matrix.BrickView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />-->
+
+    <!--图片倒影-->
+    <!--<com.summerhao.bs.all_list.view_common.customview.shader_matrix.ReflectView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />-->
+
+    <!--<com.summerhao.bs.all_list.view_common.customview.shader_matrix.DreamEffectView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+    <!-- <com.summerhao.bs.all_list.view_common.customview.shader_matrix.MatrixImageView
+         android:scaleType="matrix"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />-->
+
+    <com.summerhao.bs.all_list.view_common.customview.shader_matrix.MultiCricleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
